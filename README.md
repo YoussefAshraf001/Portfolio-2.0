@@ -8,10 +8,6 @@
 
 ---
 
-# Demo :movie_camera:
-
-![](./public/image/screen.png)
-
 ## Go See it Live [here](https://portfolio-website-2-azure.vercel.app/).
 
 ---
