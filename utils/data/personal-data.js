@@ -1,12 +1,13 @@
 export const personalData = {
   name: "Youssef Ashraf",
-  profile: '/profile.png',
+  profile: "/profile.png",
   designation: "Software Engineer",
-  description: "My name is Youssef Ashraf. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
-  email: 'youssefashraf273@gmail.com',
-  phone: '+201092201470',
-  address: 'Giza, Egypt',
-  github: 'https://github.com/YoussefAshraf001',
-  linkedIn: 'https://www.linkedin.com/in/youssef-ashraf-853a271b4/',
-  resume: "https://flowcv.com/resume/jon8anhrum"
-}
+  description:
+    "I am a professional software engineer with a passion for problem-solving and exploring new technologies. As a quick learner and enthusiastic programmer, I specialize in JavaScript and enjoy working on all aspects of web development. I’m always excited to tackle new challenges and contribute to building innovative, open web solutions. Feel free to connect with me if you're looking for a developer with a strong passion for technology and problem-solving!",
+  email: "youssefashraf273@gmail.com",
+  phone: "+201092201470",
+  address: "Giza, Egypt",
+  github: "https://github.com/YoussefAshraf001",
+  linkedIn: "https://www.linkedin.com/in/youssef-ashraf-853a271b4/",
+  resume: "https://flowcv.com/resume/jon8anhrum",
+};
