@@ -70,7 +70,7 @@ function HeroSection() {
               role="button"
               target="_blank" // Open in new tab if needed
               href="/Resume.pdf"
-              download="Resume.pdf" // You can specify the filename here
+              download="Youssef Ashrafs Resume.pdf" // You can specify the filename here
             >
               <span>Get Resume</span>
               <MdDownload size={16} />
