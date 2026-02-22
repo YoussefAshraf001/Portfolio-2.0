@@ -1,16 +1,135 @@
-# React + Vite
+# Youssef Ashraf - Portfolio 3.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, animated, design-forward portfolio built with React + Vite.
 
-Currently, two official plugins are available:
+## Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Custom multi-theme UI system
+- Interactive project cards with version switching (`v2.0` / `Original`)
+- Skeleton + fade image loading
+- Profile image lightbox preview
+- CV preview modal + direct download
+- Smooth Framer Motion transitions across key sections
+- Responsive layout for desktop and mobile
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 7
+- Tailwind CSS 4
+- Framer Motion
+- React Icons
+- React Toastify
 
-## Expanding the ESLint configuration
+## Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Build production output:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+  App.jsx
+  index.css
+  data/
+    projects.js
+    education.js
+    experiences.js
+  skill-image.js
+public/
+  Projects/
+  skills/
+  logos/
+  profile.png
+  Youssef-Ashraf-CV.pdf.pdf
+```
+
+## Content Editing
+
+### Projects
+
+Edit: `src/data/projects.js`
+
+- Main categories:
+  - `featured`
+  - `frontend`
+  - `demos`
+- Optional versioned project format:
+
+```js
+versions: [
+  {
+    id: "latest",
+    label: "v2.0",
+    latest: true,
+    image: "/Projects/weatherwatch.png",
+    code: "https://github.com/...",
+    demo: "https://...",
+  },
+  {
+    id: "classic",
+    label: "Original",
+    image: "/Projects/weatherapp.jpg",
+    code: "https://github.com/...",
+    demo: "https://...",
+  },
+];
+```
+
+### Skills Icons
+
+Edit mapping in `src/skill-image.js`.
+
+Icons are loaded from:
+
+- `public/skills`
+
+### Logos
+
+Education and experience logos are loaded from:
+
+- `public/logos`
+
+### CV
+
+Current CV path is set in `src/App.jsx` via:
+
+```js
+const CV_FILE = "/Youssef-Ashraf-CV.pdf.pdf";
+```
+
+Rename your file if needed and update this constant.
+
+## Deploy (Netlify)
+
+This repo includes `netlify.toml` for Vite:
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node version: `20.19.0`
+
+Important:
+
+- Remove `@netlify/plugin-nextjs` from Netlify Build Plugins for this project.
+- This is a Vite app, not Next.js.
+
+## Contact
+
+- GitHub: `https://github.com/YoussefAshraf001`
+- LinkedIn: `https://www.linkedin.com/in/youssef-ashraf-853a271b4/`
+- Email: `youssefashraf273@gmail.com`
